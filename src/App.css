@@ -14,15 +14,7 @@ section{
   display: flex;
   align-items: center;
 }
-.container{
-  width: 650px;
-  background-color: #332a224e;
-  padding: 30px 25px;
-  backdrop-filter:blur(10px);
-  border-radius: 10px;
-  border: 1px solid #d7d7d74e;
-  margin-right: 15%;
-}
+
 .top-sc{
   display: flex;
   justify-content: space-between;
