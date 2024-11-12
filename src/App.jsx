@@ -5,7 +5,9 @@ function App() {
   const [prayer,setprayer]=useState({})
   const [time,settime]=useState("")
   const [city,setCity] = useState("Cairo")
-
+  const day = new Date().getDate();
+  const month = new Date().getMonth();
+  const yers = new Date().getFullYear();
   useEffect(() => {
     const fetchData = async () => {
       try{
@@ -60,7 +62,7 @@ const format = (time) => {
           </div>
           <div className="date">
             <h3>التاريخ</h3>
-            <h3>{time}</h3>
+            <h3>{`${day}:${month}:${yers}`}</h3>
           </div>
         </div>
         <Prayer name="الفجر" time= {format(prayer.Fajr)}/>
